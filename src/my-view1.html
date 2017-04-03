@@ -1,0 +1,48 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-view1">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+
+.introText {
+    font-family: 'GT Walsheim Pro Medium', serif;
+    font-size: 1.9em;
+    line-height: 1.5625em;
+    color: #333333;
+    margin-top: 1.5em;
+    letter-spacing: 0.02em;
+}
+    </style>
+
+
+<!-- Body copy & Links -->
+
+<div class="wrapper">
+<div>
+  <p class="introText">
+    Hello.<br />
+    I’m a digital product designer based in Sydney</p>
+    <p class="introText">I currently call <a href="http://www.mentallyfriendly.com">Mentally Friendly</a> my home<br />
+    Occasionally I <a href="//medium.com">write words</a> and <a href="http://instagram.com">take photos</a>
+  </p>
+</div>
+</div>
+
+  </template>
+
+  <script>
+    class MyView1 extends Polymer.Element {
+      static get is() {
+        return 'my-view1';
+      }
+    }
+
+    window.customElements.define(MyView1.is, MyView1);
+  </script>
+</dom-module>
