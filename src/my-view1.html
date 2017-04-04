@@ -1,5 +1,6 @@
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="shared-styles.html">
+<link rel="import" href="header-comp.html">
 
 <dom-module id="my-view1">
   <template>
@@ -10,6 +11,10 @@
         padding: 10px;
       }
 
+      /*.header-section {
+        background: red;
+      }*/
+
 .introText {
     font-family: 'GT Walsheim Pro Medium', serif;
     font-size: 1.9em;
@@ -18,18 +23,33 @@
     margin-top: 1.5em;
     letter-spacing: 0.02em;
 }
+
+.highlightText{
+    color: #0A9AFF
+}
+a {
+text-decoration: none;
+}
+a:hover {
+color: #69C1FF;
+}
     </style>
 
 
 <!-- Body copy & Links -->
 
 <div class="wrapper">
+
+  <div class="header-section">
+    <header-comp></header-comp>
+  </div>
+
 <div>
   <p class="introText">
     Hello.<br />
     I’m a digital product designer based in Sydney</p>
-    <p class="introText">I currently call <a href="http://www.mentallyfriendly.com">Mentally Friendly</a> my home<br />
-    Occasionally I <a href="//medium.com">write words</a> and <a href="http://instagram.com">take photos</a>
+    <p class="introText">I currently call <a href="http://www.mentallyfriendly.com"  target="_blank" class="highlightText">Mentally Friendly</a> my home<br />
+    Occasionally I <a href="//medium.com" target="_blank" class="highlightText">write words</a> and <a href="http://instagram.com" target="_blank" class="highlightText">take photos</a>
   </p>
 </div>
 </div>

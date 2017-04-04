@@ -1,0 +1,31 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+
+<dom-module id="header-comp">
+  <template>
+    <style>
+
+    .logo {
+      font-family: 'GT Walsheim Pro Medium', serif;
+      font-size: 1.2em;
+      line-height: 1.5625em;
+      color: #333333;
+      margin-top: 1.5em;
+      letter-spacing: 0.02em;
+    }
+
+
+    </style>
+
+      <p class="logo">Christopher Ellis</p>
+
+  </template>
+  <script>
+    class HeaderComp extends Polymer.Element {
+      static get is() { return 'header-comp'; }
+    }
+
+    window.customElements.define(HeaderComp.is, HeaderComp)
+  </script>
+</dom-module>
