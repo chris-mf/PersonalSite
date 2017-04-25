@@ -2,6 +2,7 @@
 <link rel="import" href="shared-styles.html">
 <link rel="import" href="header-comp.html">
 
+
 <dom-module id="my-view1">
   <template>
     <style include="shared-styles">
@@ -11,9 +12,6 @@
         padding: 10px;
       }
 
-      /*.header-section {
-        background: red;
-      }*/
 
 .introText {
     font-family: 'GT Walsheim Pro Medium', serif;
@@ -21,37 +19,51 @@
     line-height: 1.5625em;
     color: #333333;
     margin-top: 1.5em;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
 }
 
-.highlightText{
-    color: #0A9AFF
-}
-a {
+    .highlightText{
+        color: #0A9AFF
+    }
+
+/*a {
 text-decoration: none;
+ transition: transform 0.2s ease;
+ display: inline-block;
 }
 a:hover {
-color: #69C1FF;
+    color: #69C1FF;
+    transform: scale(1.1);
+}*/
+
+.animated--slide-up {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1700ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.animated--slide-up.show {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+
+
+
     </style>
 
 
 <!-- Body copy & Links -->
 
-<div class="wrapper">
-
-  <div class="header-section">
-    <header-comp></header-comp>
+<div id="chrissucks" class="wrapper animated--slide-up">
+  <div>
+    <p class="introText">
+      Hello.<br />
+      I’m a digital product designer based in Sydney</p>
+      <p class="introText">I currently call <a href="http://www.mentallyfriendly.com"  target="_blank" class="highlightText shiftUp2">Mentally Friendly</a> my home<br />
+      Occasionally I <a href="https://medium.com/@chris.e" target="_blank" class="highlightText shiftUp2">write words</a> and <a href="https://vsco.co/christophcozy/images/1" target="_blank" class="highlightText shiftUp2">take photos</a>
+    </p>
   </div>
-
-<div>
-  <p class="introText">
-    Hello.<br />
-    I’m a digital product designer based in Sydney</p>
-    <p class="introText">I currently call <a href="http://www.mentallyfriendly.com"  target="_blank" class="highlightText">Mentally Friendly</a> my home<br />
-    Occasionally I <a href="//medium.com" target="_blank" class="highlightText">write words</a> and <a href="http://instagram.com" target="_blank" class="highlightText">take photos</a>
-  </p>
-</div>
 </div>
 
   </template>
@@ -60,6 +72,13 @@ color: #69C1FF;
     class MyView1 extends Polymer.Element {
       static get is() {
         return 'my-view1';
+      }
+      ready() {
+        super.ready();
+
+        setTimeout(() => {
+          this.$.chrissucks.classList.add('show');
+        }, 250);
       }
     }
 

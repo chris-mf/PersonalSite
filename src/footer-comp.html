@@ -1,0 +1,68 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+
+<dom-module id="footer-comp">
+  <template>
+    <style include="shared-styles">
+
+    a{
+      font-family: 'GT Walsheim Pro Medium', serif;
+      font-size: 1em;
+      line-height: 2.5em;
+      color: #333333;
+      letter-spacing: 0.04em;
+      padding-right: 25px;
+      padding-bottom: 10px;
+      text-decoration: none;
+    }
+
+    footer {
+   position: fixed;bottom:
+   left: 0;
+   bottom: 0;
+   height: 100px;
+   /*width: 100%;*/
+   overflow:hidden;
+    }
+
+    /*.footer-text{
+
+    }*/
+
+/*Twitter       Instagram       Medium        VSCO          Reading list*/
+
+    </style>
+    <div class="wrapper">
+        <footer>
+          <a href="https://twitter.com/christoph_ellis" target="_blank" class="footer-text shiftUp">Twitter</a>
+          <a href="https://www.instagram.com/christoph_luke/" target="_blank" class="footer-text shiftUp">Instagram</a>
+          <a href="https://medium.com/@chris.e" target="_blank" class="footer-text shiftUp">Medium</a>
+          <a href="https://vsco.co/christophcozy/images/1" target="_blank" class="footer-text shiftUp">VSCO</a>
+            <a href="https://dribbble.com/chrisellis" target="_blank" class="footer-text shiftUp">Dribbble</a>
+            <a href="https://github.com/chris-mf" target="_blank" class="footer-text shiftUp">GitHub</a>
+            <a href="http://www.google.com" target="_blank" class="footer-text shiftUp">Reading list</a>
+
+
+
+
+
+
+      </footer>
+  </div>
+
+
+
+
+
+  </template>
+  <script>
+    class FooterComp extends Polymer.Element {
+      static get is() {
+        return 'footer-comp';
+      }
+    }
+
+    window.customElements.define(FooterComp.is, FooterComp)
+  </script>
+</dom-module>

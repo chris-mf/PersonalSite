@@ -3,22 +3,54 @@
 
 
 <dom-module id="header-comp">
+
   <template>
-    <style>
+<style include="shared-styles">
+
 
     .logo {
       font-family: 'GT Walsheim Pro Medium', serif;
-      font-size: 1.2em;
+      font-size: 1em;
       line-height: 1.5625em;
       color: #333333;
-      margin-top: 1.5em;
       letter-spacing: 0.02em;
     }
 
+    .nav-text{
+      font-family: 'GT Walsheim Pro Medium', serif;
+      font-size: 1em;
+      line-height: 1.5625em;
+      color: #333333;
+      letter-spacing: 0.04em;
+      margin-left: 50px;
+    }
+
+    nav {
+      text-align: right;
+      display: block;
+      padding-bottom: 25%;
+      padding-top: 8%;
+
+    }
+    nav h1 {
+      float: left;
+      margin: 0;
+    }
+    a {
+    text-decoration: none;
+    }
 
     </style>
+    <div>
+      <header class="main-nav">
+        <nav>
+          <h1 class="logo test">Christopher Ellis</h1>
+          <a href="https://dribbble.com/chrisellis" target="_blank" class="nav-text shiftUp">Work</a>
+          <a href="#contact" class="nav-text underline">Contact</a>
+        </nav>
+      </header>
+  </div>
 
-      <p class="logo">Christopher Ellis</p>
 
   </template>
   <script>

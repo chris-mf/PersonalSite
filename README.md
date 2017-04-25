@@ -7,6 +7,11 @@
 • Write in My View 1
 
 
+To do list:
+Animation on hover - slide out or something
+links off to actual places
+Contact page 
+
 # Polymer App Toolbox - Starter Kit
 
 [![Build Status](https://travis-ci.org/PolymerElements/polymer-starter-kit.svg?branch=master)](https://travis-ci.org/PolymerElements/polymer-starter-kit)
