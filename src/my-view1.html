@@ -26,15 +26,6 @@
         color: #0A9AFF
     }
 
-/*a {
-text-decoration: none;
- transition: transform 0.2s ease;
- display: inline-block;
-}
-a:hover {
-    color: #69C1FF;
-    transform: scale(1.1);
-}*/
 
 .animated--slide-up {
     opacity: 0;
@@ -51,15 +42,32 @@ a:hover {
   align-items: center;
 
 }
-.main-text-wrapper {
+/*.main-text-wrapper {
   margin-top: -10vh;
-}
+}*/
+
+
+/*Mobile breakpoint*/
+@media only screen and (max-width: 479px) {
+    .introText{
+    font-size: 1.5em;
+  }
+
+  .flex-text-wrapper {
+    align-items: flex-start;
+    height: 100%;
+    }
+
+  }
+
 </style>
+
+
 
 
 <!-- Body copy & Links -->
 
-<div id="chrissucks" class="wrapper animated--slide-up">
+<div id="wrapperID" class="wrapper animated--slide-up">
   <div class="flex-text-wrapper">
     <div class="main-text-wrapper">
       <p class="introText">
@@ -87,7 +95,7 @@ a:hover {
         super.ready();
 
         setTimeout(() => {
-          this.$.chrissucks.classList.add('show');
+          this.$.wrapperID.classList.add('show');
         }, 250);
       }
     }
