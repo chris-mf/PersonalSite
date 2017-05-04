@@ -11,7 +11,7 @@
       font-family: 'GT Walsheim Pro Medium', serif;
       font-size: 1em;
       line-height: 1.5625em;
-      color: #4A4A4A;
+      color: #000000;
       letter-spacing: 0.04em;
       -webkit-font-smoothing: antialiased;
       font-weight: normal;
@@ -21,7 +21,7 @@
       font-family: 'GT Walsheim Pro Medium', serif;
       font-size: 1em;
       line-height: 1.5625em;
-      color: #4A4A4A;
+      color: #000000;
       letter-spacing: 0.04em;
       margin-left: 50px;
       -webkit-font-smoothing: antialiased;
@@ -42,21 +42,54 @@
     text-decoration: none;
     }
 
+    /*.dash-line {
+      border-bottom: 2px solid;
+      width: 5px;
+      line-height: 1;
+      height: 20px;
+    }*/
+
     /*Mobile breakpoint*/
     @media only screen and (max-width: 479px) {
-        .nav{
+      /*nav{
+        margin-top: 20px;
         margin-bottom: 25px;
+        text-align: left;
+      }*/
+
+      .nav-class {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
       }
+
+      .nav-links{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        margin-top: 20px;
+        text-align: left;
+      }
+
+      .nav-text {
+        margin-left: 0;
+        margin-right: 20px;
+      }
+
+
 
         }
 
     </style>
     <div>
       <header class="main-nav">
-        <nav>
+        <nav class="nav-class">
+          <div class="dash-line"></div>
           <h1 class="logo">Christopher Ellis</h1>
-          <a href="https://dribbble.com/chrisellis" target="_blank" class="nav-text shiftUp">Work</a>
-          <a href="mailto:ellis.christoph@gmail.com?Subject=Hello%20again" target="_top" class="nav-text shiftUp">Contact</a>
+          <div class="nav-links">
+            <a href="https://dribbble.com/chrisellis" target="_blank" class="nav-text shiftUp">Work</a>
+            <a href="mailto:ellis.christoph@gmail.com?Subject=Hello%20again" target="_top" class="nav-text shiftUp">Contact</a>
+          </div>
         </nav>
       </header>
   </div>
