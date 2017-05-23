@@ -1,6 +1,7 @@
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="shared-styles.html">
 <link rel="import" href="header-comp.html">
+<link rel="import" href="next-project.html">
 
 <dom-module id="case-study">
   <template>
@@ -27,35 +28,22 @@
       }
 
 
-.case-intro-wrapper {
-margin-top: 55px;
-}
+      .case-intro-wrapper {
+        margin-top: 55px;
+      }
 
-.copy-section {
-  margin-top: 4%;
- /*width: 44%;*/
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+      .copy-section {
+        margin-top: 2%;
+        /*width: 44%;*/
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+      }
 
-}
 
-h2  {
-      font-family: 'GT Walsheim Pro Medium', serif;
-      font-size: 1.9em;
-      line-height: 1.5625em;
-      color: #000000;
-      margin-top: 1.5em;
-      letter-spacing: 0.04em;
-}
 
-p {
-  font-family: 'GT Walsheim Pro Regular', serif;
-  font-size: 1.2em;
-  line-height: 1.9em;
-  color: #000000;
-  margin-top: 1.5em;
-  letter-spacing: 0.04em;
+.copy-paragraph{
+  margin-top: 0;
 }
 
 
@@ -69,11 +57,19 @@ p {
 .copy-section {
   width: 40%;
   max-width: 650px;
-
 }
 
-    </style>
+.title-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-left: 8%;
+  margin-right: 8%;
+}
 
+
+
+    </style>
 
 
 <div class="case-intro-wrapper">
@@ -81,14 +77,18 @@ p {
     <img class="image" src="images/AHB_IntroImage.png" alt="HeaderImage" />
   </div>
 
+  <div class="title-section">
+  <h1>Project title</h1>
+  <h4>Work tasks</h4>
+  </div>
+
+
 <div class="flex-box-section">
 
-
-<div class="copy-section">
-  <h2>Heading 2</h2>
-  <p>In Issue No13 we speak with Kickstarter’s co-founder and CEO, Yancey Strickler, about a business approach that’s guided by purpose and idealism; Lifehacker founder Gina Trapani looks back on her motivation for starting one of the web’s most successful blogs; digital strategist Sarah Bray presents a more human-centred approach for how to conduct business (and life).</p>
-
-</div>
+    <div class="copy-section">
+      <h2>Heading 2</h2>
+      <p class="copy-paragraph">In Issue No13 we speak with Kickstarter’s co-founder and CEO, Yancey Strickler, about a business approach that’s guided by purpose and idealism; Lifehacker founder Gina Trapani looks back on her motivation for starting one of the web’s most successful blogs; digital strategist Sarah Bray presents a more human-centred approach for how to conduct business (and life).</p>
+    </div>
 
 </div>
 </div>
