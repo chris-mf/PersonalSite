@@ -31,8 +31,7 @@
     "promise-polyfill": "polymerlabs/promise-polyfill#2.0-preview",
     "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0-rc.1",
     "test-fixture": "PolymerElements/test-fixture#^3.0.0-rc.1",
-    "web-component-tester": "Polymer/web-component-tester#^6.0.0-prerelease.6",
-    "url": "webcomponents/URL#^0.5.7"
+    "web-component-tester": "Polymer/web-component-tester#^6.0.0-prerelease.6"
   },
   "variants": {
     "1.x": {
@@ -49,16 +48,15 @@
         "test-fixture": "polymerelements/test-fixture#^1.0.0",
         "web-component-tester": "^4.0.0",
         "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0",
-        "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.2.3",
-        "url": "webcomponents/URL#^0.5.7"
+        "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.2.3"
       }
     }
   },
-  "_release": "9ba94fa17b",
+  "_release": "b2da948497",
   "_resolution": {
     "type": "branch",
     "branch": "2.0-preview",
-    "commit": "9ba94fa17bee0336d7473d234af4afc03878cd5c"
+    "commit": "b2da9484978404499cce7d1f97139025d514e569"
   },
   "_source": "https://github.com/PolymerElements/iron-location.git",
   "_target": "2.0-preview",
